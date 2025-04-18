@@ -1,7 +1,9 @@
-import React from 'react'
+import WeatherComponents from '@/components/WeatherComponents'
 
-export default function page() {
-  return (
-    <div>tempraure </div>
-  )
+
+export default function page({
+  params:{location},
+  searchParams:{latitude ,longitude}
+}) {
+  return <WeatherComponents lat ={latitude} lon={longitude} />
 }
