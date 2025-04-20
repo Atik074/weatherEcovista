@@ -4,6 +4,7 @@ import Image from "next/image";
 
 const WindComponents =async ({lat,lon}) => {
     const {speed,deg} = await getWindData(lat,lon)
+    
     return (
         <Card>
             <h6 className="feature-name">Wind</h6>

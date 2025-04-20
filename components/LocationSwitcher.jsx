@@ -40,7 +40,7 @@ const LocationSwitcher = () => {
                 {
                     locatoins.map((info) =>
                     <li key={info.location}>
-                        <Link href={`/${info.location}?latitude=${info.latitude}&longitude=${info.longitde}`}>
+                        <Link  href={`/${info.location}?latitude=${info.latitude}&longitude=${info.longitude}`}>
                          {info.location}
                          
                         </Link>
